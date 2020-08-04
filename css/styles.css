@@ -1,0 +1,160 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(
+    200deg,
+    rgb(177, 230, 152) 0%,
+    rgb(77, 175, 126) 100%
+  );
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.3em;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-weight: 300;
+  color: rgb(129, 165, 115);
+  padding: 0 30px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 35px 50px;
+}
+
+.wrapper p {
+  line-height: 1.3;
+  text-align: justify;
+  padding: 5px 30px;
+}
+
+.content {
+  padding: 50px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.banner {
+  background-color: white;
+  text-align: center;
+}
+
+.banner img {
+  height: 70px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
+}
+a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.slider-nav li {
+  flex: 2;
+  text-align: center;
+  display: flex;
+}
+
+.slider-nav .arrow {
+  flex: 1;
+}
+
+.arrow a {
+  font-size: 30px;
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+
+.plant ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plant ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.plant ul li:last-child {
+  border-bottom: 0;
+}
+
+.plant a {
+  text-decoration: none;
+  background: rgb(103, 151, 75);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.plant h2 {
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  font-size: 50px;
+  font-family: serif;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.plants-grid {
+  display: flex;
+  /* margin: 0 auto; */
+  /* max-width: 750px; */
+  align-items: center;
+}
+
+.plant {
+  background-color: rgb(228, 255, 210);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
