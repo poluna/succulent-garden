@@ -1,18 +1,24 @@
 {
-  "name": "flexbox",
+  "name": "succulent-garden",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website dedicated to succulent topics.<br><br> website: https://poluna.github.io/succulent-garden/ <br><br>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poluna/succulent-garden.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poluna/succulent-garden/issues"
+  },
+  "homepage": "https://github.com/poluna/succulent-garden#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1"
   },
-  
   "browserslist": ["last 2 versions"]
-  
 }
