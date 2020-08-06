@@ -97,6 +97,10 @@ a:hover {
   width: 100%;
 }
 
+a[href="#succulents"] {
+  font-weight: bold;
+}
+
 .plant ul {
   margin: 0;
   padding: 0;
@@ -125,21 +129,25 @@ a:hover {
   color: rgb(32, 32, 32);
   letter-spacing: 2px;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  padding: 0;
 }
 
-.price {
-  font-size: 50px;
-  font-family: serif;
-  margin: 10px 0;
-  width: 100%;
-  text-align: center;
+.plant h3 {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1em;
+  color: rgb(85, 85, 85);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .plants-grid {
   display: flex;
   /* margin: 0 auto; */
   /* max-width: 750px; */
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .plant {
@@ -149,6 +157,8 @@ a:hover {
   border-radius: 5px;
   text-align: center;
   flex: 1;
+  min-width: 180px;
+  max-width: 300px;
   /* display: flex; */
   /* flex-wrap: wrap; */
 }
@@ -157,4 +167,10 @@ footer {
   background-color: white;
   padding: 10px;
   text-align: center;
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    padding: 0;
+  }
 }
