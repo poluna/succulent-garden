@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    220deg,
+    rgb(233, 184, 164),
+    rgb(162, 209, 253)
+  );
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 200;
+  background-color: rgba(110, 190, 255, 0.5);
+  padding: 15px 0;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+a:hover {
+  background-color: rgba(108, 173, 226, 0.6);
+}
+
+h1 {
+  background-color: rgba(110, 190, 255, 0.6);
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Spirax", cursive;
+  font-size: 3em;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  /* border: 2px solid red; */
+}
+
+.flex-nav ul {
+  border: 1.5px solid rgba(58, 58, 58, 0.8);
+  list-style: none;
+  display: flex;
+}
+
+.flex-nav li {
+  /* border: 2px solid red; */
+  flex: 3;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
+.wrapper img {
+  width: 100%;
+  margin: 10px 0;
+  /* border-radius: 50px; */
+}
+
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+  .flex-nav .social {
+    flex: 1 1 25%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+}
