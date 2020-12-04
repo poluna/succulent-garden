@@ -40,6 +40,11 @@ h2 {
   background-color: rgb(255, 255, 255);
 }
 
+.content > * {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 .banner {
   background-color: white;
   text-align: center;
@@ -192,5 +197,9 @@ footer {
 @media (max-width: 650px) {
   .wrapper {
     padding: 0;
+  }
+
+  .content > * {
+    max-width: 95%;
   }
 }
