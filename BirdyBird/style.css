@@ -28,7 +28,7 @@ a:hover {
   background-color: rgba(108, 173, 226, 0.6);
 }
 
-h1 {
+.top h1 {
   background-color: rgba(110, 190, 255, 0.6);
   text-align: center;
   padding: 20px 0;
@@ -80,4 +80,38 @@ h1 {
   .flex-nav li {
     flex-basis: 100%;
   }
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.choice {
+  flex: 1 1 200px;
+  background-color: rgba(108, 173, 226, 0.6);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choice h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.choice button {
+  padding: 5px 50px;
+  background-color: rgba(95, 141, 179, 0.9);
+  border: none;
+  margin-top: 20px;
+  color: rgb(235, 235, 235);
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
