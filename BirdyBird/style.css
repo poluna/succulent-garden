@@ -115,3 +115,64 @@ a:hover {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
+.choice button:hover {
+  background-color: rgb(95, 128, 155);
+}
+
+.flex-form {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* width: 100%; */
+  font-size: 16px;
+  border: 10px solid rgba(107, 107, 107, 0.2);
+  /* background-color: white; */
+  /* padding: 10px; */
+  /* height: 40px; */
+  margin-top: 20px;
+}
+
+.flex-form > * {
+  /* border: 1px solid red; */
+  /* margin: 0 3px; */
+  border: none;
+  border-right: 1px solid rgba(117, 117, 117, 0.8);
+  /* padding: 10px 5px; */
+  height: 50px;
+}
+
+input[type="submit"] {
+  flex-basis: 70px;
+  background-color: rgba(95, 141, 179, 0.9);
+  color: rgb(240, 240, 240);
+}
+
+input[type="search"] {
+  /* flex-basis: 300px; */
+  flex: 1 1 300px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.flex-form select {
+  width: 40px;
+  text-align-last: center;
+}
+
+.flex-form label {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  /* margin-right: 10px; */
+  background-color: white;
+}
+
+footer {
+  background-color: rgba(52, 78, 99, 0.9);
+  text-align: center;
+  color: rgb(235, 235, 235);
+  padding: 45px;
+  margin-top: 50px;
+}
