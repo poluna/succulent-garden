@@ -1,0 +1,41 @@
+:root {
+    --color1: rgb(240,240,240);
+    --color2: rgb(199, 125, 125);
+    --color3: rgb(125, 148, 199);
+    --color4:  rgb(179, 199, 125);
+}
+
+body {
+    background-color: rgb(51, 51, 51);
+}
+
+.box {
+    background-color: var(--color1);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 2s; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: forwards;
+}
+
+/* @keyframes myanimation {
+    0% {background-color: var(--color1); left: 0px; top: 0px; border-radius: 0 0 0 0;}
+    25% {background-color: var(--color2); left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+    50% {background-color: var(--color3); left: 300px; top: 300px; border-radius: 50% 50% 0 0;}
+    75% {background-color: var(--color4); left: 0px; top: 300px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: var(--color1); left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+} */
+
+@keyframes myanimation {
+    0% {background-color: var(--color1); border-radius: 0 0 0 0;}
+    25% {background-color: var(--color2); border-radius: 50% 0 0 0;}
+    50% {background-color: var(--color3); border-radius: 50% 50% 0 0;}
+    75% {background-color: var(--color4); border-radius: 50% 50% 50% 0;}
+    100% {background-color: var(--color1); border-radius: 50% 50% 50% 50%;}
+}
