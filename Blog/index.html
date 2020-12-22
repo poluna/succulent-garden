@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <title>Full Bleed Blog Layout!</title>
+    <title>My Blog</title>
     <script src="https://kit.fontawesome.com/3bab35fe8c.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <!--
-  Thanks To Phillipp Rudloff for the .tip Idea
-  https://codepen.io/kleinfreund/pen/aLQgYy
- -->
+ 
     <header>
       <h1>My Blog</h1>
       <nav>
@@ -194,13 +191,17 @@
 
     <footer>
         <h2>My Blog</h2>
-        <p>&copy 2021 All rights reserved</p>
+        <p>&copy <span id="year"></span> All rights reserved</p>
         <div class="socials">
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
             <a href="#"><i class="fab fa-blogger-b"></i></a>
         </div>
     </footer>
+
+    <script>
+        const year = document.querySelector("#year");
+        year.innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
