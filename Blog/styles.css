@@ -1,5 +1,5 @@
 :root {
-  --yellow: #ffc600;
+  --main-color: rgb(64, 115, 255);
 }
 
 body {
@@ -52,7 +52,7 @@ img {
 
 .post a {
   color: black;
-  text-decoration: underline wavy var(--yellow);
+  text-decoration: underline wavy var(--main-color);
 }
 
 h1,
@@ -69,6 +69,22 @@ h2 {
   margin: 50px auto;
   grid-gap: 10px 50px;
   grid-template-columns: 3fr 12fr 5fr;
+}
+
+.post h2 {
+  opacity: 0;
+  animation: title;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+      opacity:1;
+  }
 }
 
 .post > * {
@@ -102,12 +118,12 @@ figcaption {
 .tip-left {
   grid-column: 1 / span 1;
   text-align: right;
-  border-right: 2px solid var(--yellow);
+  border-right: 2px solid var(--main-color);
 }
 
 .tip-right {
   grid-column: span 1 / -1;
-  border-left: 2px solid var(--yellow);
+  border-left: 2px solid var(--main-color);
 }
 
 footer {
